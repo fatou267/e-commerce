@@ -1,0 +1,160 @@
+body, html{
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        font-family: serif;
+        background-color: #E5DBCF;
+}
+.page
+{
+  min-height: 100%;
+}
+.section
+{
+  text-align: center;
+
+}
+.design
+{
+  text-align: center;
+  margin-top: -10%;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+ 
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+ 
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+ 
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+ 
+.topnav {
+    background-color: #E5DBCF;
+    overflow: hidden;
+}
+ 
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+ 
+.topnav a:hover {
+    background-color: #E5DBCF;
+    color: black;
+}
+ 
+
+.topnav a.active {
+    background-color: #E5DBCF;
+    color: white;
+}
+ 
+ @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+ 
+a svg{
+  transition:all .5s ease;
+ 
+  &:hover{
+    #transform:rotate(180deg);
+  }
+}
+.menu{
+  background: #E5DBCF;
+  display: none;
+  padding: 5px;
+  width: 320px;
+  @include border-radius(5px);
+ 
+  #transition: all 0.5s ease;
+ 
+  a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 2px;
+    margin: 3px 0;
+    text-decoration: none;
+    background: #444;
+ 
+    &:nth-child(1){
+      margin-top: 0;
+      @include border-radius(3px 3px 0 0 );
+    }
+    &:nth-child(5){
+      margin-bottom: 0;
+      @include border-radius(0 0 3px 3px);
+    }
+ 
+    &:hover{
+      background: #555;
+    }
+  }
+}
+.cont {
+    display: inline-block;
+    position: relative;
+}
+.cont .text {
+    background: lime;
+    z-index: 1;
+    position: absolute;
+    font-family: Georgia;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    color: black;
+    width: 50%;
+}
+.pro
+{
+  text-decoration: none;
+  color: black;
+}
+aside
+{
+  text-align: center;
+  color: black;
+  border-style: solid;
+  border-color: lime;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+
+}
